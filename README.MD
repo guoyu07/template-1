@@ -7,7 +7,7 @@
 ```
 npm i -g vue-cli
 
-vue init dingyiming/template projectname
+vue init dingyiming/template#vue2 projectname
 ```
 
 ## directory structure
