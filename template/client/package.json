@@ -4,7 +4,6 @@
   "author": "dingyiming <315129552@qq.com>",
   "private": true,
   "scripts": {
-    "osx": "webpack-dev-server --config build/osx.js --quiet --open --inline --hot --port 8080",
     "dev": "webpack-dev-server --config build/dev.js --open --inline --hot --port 8080",
     "build": "webpack --config build/prod.js --progress --hide-modules"
   },
@@ -28,7 +27,6 @@
     "style-loader": "^0.13.1",
     "vue-loader": "^9.4.0",
     "webpack": "2.1.0-beta.25",
-    "webpack-dashboard": "^0.2.0",
     "webpack-dev-server": "^2.1.0-beta.0",
     "webpack-merge": "^0.14.1"
   }

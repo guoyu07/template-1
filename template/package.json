@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "node app",
+    "start": "node server",
     "init": "cd client && cnpm install",
     "dev": "cd client && npm run dev",
-    "build": "cd client && npm run build"
+    "build": "rm -rf public && cd client && npm run build"
   },
   "dependencies": {
     "express": "~4.13.4"
