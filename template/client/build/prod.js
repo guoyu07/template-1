@@ -53,13 +53,14 @@ const productionConf = merge(baseConfig, {
     new ExtractTextPlugin('css/[name].[hash:8].css'),
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
-      filename: 'js/vendor_vue.[hash:8].js',
+      filename: 'js/vue.[hash:8].js',
     }),
     new webpack.optimize.OccurrenceOrderPlugin(),
     // 自动注入 html
     new HtmlWebpackPlugin({
       filename: 'html/index.html',
       template: path.resolve(__dirname, '../index.html'),
+      inject: true
     }),
     // Gzip
     new CompressionWebpackPlugin({
