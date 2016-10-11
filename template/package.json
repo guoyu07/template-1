@@ -1,0 +1,14 @@
+{
+  "name": "template-vue2",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app",
+    "init": "cd client && cnpm install",
+    "dev": "cd client && npm run dev",
+    "build": "cd client && npm run build"
+  },
+  "dependencies": {
+    "express": "~4.13.4"
+  }
+}
