@@ -9,8 +9,8 @@
   },
   "dependencies": {
     "normalize.css": "^5.0.0",
-    "vue": "^2.0.1",
-    "vue-router": "^2.0.0"
+    "vue": "^2.0.3",
+    "vue-router": "^2.0.1"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",
