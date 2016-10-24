@@ -13,7 +13,9 @@ AV.init({
   appKey: process.env.LEANCLOUD_APP_KEY,
   masterKey: process.env.LEANCLOUD_APP_MASTER_KEY
 })
+app.enable('trust proxy')
 app.use(AV.express())
+app.use(AV.Cloud.HttpsRedirect())
 */
 
 app.use(compression())
