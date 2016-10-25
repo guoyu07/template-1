@@ -6,7 +6,7 @@ RUN mkdir -p /etc/nginx/conf.d
 
 RUN ls -a
 
-RUN mv ./nginx_config.conf  /etc/nginx/conf.d
+ADD . /etc/nginx/conf.d
 
 EXPOSE 80:80
 
