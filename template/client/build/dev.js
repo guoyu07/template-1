@@ -3,12 +3,19 @@ const webpack = require('webpack')
 const merge = require('webpack-merge')
 const baseConfig = require('./base')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const developmentConf = merge(baseConfig, {
   output: {
     path: path.resolve(__dirname, '../'),
     publicPath: '',
     filename: '[name].js'
+  },
+  module: {
+    rules: [{
+      test: /\.(png|jpg|jpeg|gif|svg)$/,
+      loader: 'url?limit=10000&name=images/[name].[ext]',
+    }]
   },
   devServer: {
     historyApiFallback: true,
@@ -18,6 +25,7 @@ const developmentConf = merge(baseConfig, {
     proxy: {},
   },
   plugins: [
+    new ExtractTextPlugin("styles.css"),
     new webpack.LoaderOptionsPlugin({
       vue: {
         postcss: [

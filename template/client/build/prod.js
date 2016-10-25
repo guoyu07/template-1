@@ -6,15 +6,22 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const CompressionWebpackPlugin = require('compression-webpack-plugin');
+const BaseDir = 'index/';
 
 const productionConf = merge(baseConfig, {
   output: {
     path: path.resolve(__dirname, '../../public'),
-    filename: 'js/app.[hash:8].js',
+    filename: BaseDir + 'js/app.[hash:8].js',
     publicPath: '/',
   },
   stats: {
     children: false
+  },
+  module: {
+    rules: [{
+      test: /\.(png|jpg|jpeg|gif|svg)$/,
+      loader: 'url?limit=10000&name=' + BaseDir + 'images/[name].[ext]',
+    }]
   },
   plugins: [
     new webpack.DefinePlugin({
@@ -50,15 +57,15 @@ const productionConf = merge(baseConfig, {
         })
       }
     }),
-    new ExtractTextPlugin('css/[name].[hash:8].css'),
+    new ExtractTextPlugin(BaseDir + 'css/[name].[hash:8].css'),
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
-      filename: 'js/vue.[hash:8].js',
+      filename: BaseDir + 'js/vue.[hash:8].js',
     }),
     new webpack.optimize.OccurrenceOrderPlugin(),
     // 自动注入 html
     new HtmlWebpackPlugin({
-      filename: 'html/index.html',
+      filename: BaseDir + 'html/index.html',
       template: path.resolve(__dirname, '../index.html'),
       inject: true
     }),
