@@ -2,8 +2,12 @@ FROM jwilder/nginx-proxy
 
 MAINTAINER dingyiming
 
+RUN mkdir -p /etc/nginx/conf.d
+
+RUN mv nginx_config.conf  /etc/nginx/conf.d
+
 EXPOSE 80:80
 
 EXPOSE 443:443
 
-VOLUME ["/path/to/certs:/etc/nginx/certs", "/var/run/docker.sock:/tmp/docker.sock"]
+VOLUME ["/path/to/certs:/etc/nginx/certs", "/path/to/nginx.conf:/etc/nginx/conf.d", "/var/run/docker.sock:/tmp/docker.sock"]
