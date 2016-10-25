@@ -19,7 +19,7 @@ const productionConf = merge(baseConfig, {
   },
   module: {
     rules: [{
-      test: /\.(png|jpg|jpeg|gif|svg)$/,
+      test: /\.(png|jpg|jpeg|gif|svg|eot|woff|ttf)$/,
       loader: 'url?limit=10000&name=' + BaseDir + 'images/[name].[ext]',
     }]
   },
