@@ -7,8 +7,7 @@ module.exports = {
     app: path.resolve(__dirname, '../main.js'),
     vendor: [
       'vue',
-      'vue-router',
-      'normalize.css',
+      'vue-router'
     ],
   },
   resolve: {
