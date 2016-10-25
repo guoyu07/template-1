@@ -13,7 +13,7 @@ const developmentConf = merge(baseConfig, {
   },
   module: {
     rules: [{
-      test: /\.(png|jpg|jpeg|gif|svg)$/,
+      test: /\.(png|jpg|jpeg|gif|svg|eot|woff|ttf)$/,
       loader: 'url?limit=10000&name=images/[name].[ext]',
     }]
   },
