@@ -4,10 +4,11 @@
   "author": "dingyiming <315129552@qq.com>",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --config build/dev.js --open --inline --hot --port 3000",
+    "dev": "webpack-dev-server --config build/dev.js --open --inline --hot --port 3001",
     "build": "webpack --config build/prod.js --progress --hide-modules"
   },
   "dependencies": {
+    "mint-ui": "^2.0.2",
     "normalize.css": "^5.0.0",
     "vue": "^2.0.3",
     "vue-router": "^2.0.1"
