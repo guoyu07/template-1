@@ -2,6 +2,7 @@ import Vue from 'vue'
 import router from './router'
 import App from './App.vue'
 import Element from 'element-ui'
+import 'normalize.css'
 import 'element-ui/lib/theme-default/index.css'
 
 Vue.use(Element)

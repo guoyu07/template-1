@@ -1,13 +1,13 @@
 const path = require('path');
 const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   entry: {
     app: path.resolve(__dirname, '../main.js'),
     vendor: [
       'vue',
-      'vue-router',
-      'normalize.css',
+      'vue-router'
     ],
   },
   resolve: {
@@ -25,20 +25,19 @@ module.exports = {
       loader: 'babel',
       exclude: /node_modules/
     }, {
-      test: /\.(png|jpg|jpeg|gif|svg)$/,
-      loader: 'url?limit=10000&name=images/[name].[ext]',
-    }, {
       test: /\.html$/,
       loader: 'html-loader',
     }, {
       test: /\.css$/,
-      loaders: ['style-loader', 'css-loader', 'postcss-loader'],
+      loader: ExtractTextPlugin.extract({
+        fallbackLoader: "style-loader",
+        loader: "css-loader!postcss-loader"
+      })
     }]
   },
   devtool: '#cheap-module-eval-source-map',
   plugins: [
     new webpack.optimize.OccurrenceOrderPlugin(),
-    new webpack.NoErrorsPlugin(),
+    new webpack.NoErrorsPlugin()
   ],
-
 }

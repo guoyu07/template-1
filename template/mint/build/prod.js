@@ -6,15 +6,22 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const CompressionWebpackPlugin = require('compression-webpack-plugin');
+const BaseDir = 'mint/';
 
 const productionConf = merge(baseConfig, {
   output: {
     path: path.resolve(__dirname, '../../public'),
-    filename: 'js_mint/app.[hash:8].js',
+    filename: BaseDir + 'js/app.[hash:8].js',
     publicPath: '/',
   },
   stats: {
     children: false
+  },
+  module: {
+    rules: [{
+      test: /\.(png|jpg|jpeg|gif|svg|eot|woff|ttf)$/,
+      loader: 'url?limit=10000&name=' + BaseDir + 'images/[name].[ext]',
+    }]
   },
   plugins: [
     new webpack.DefinePlugin({
@@ -50,15 +57,15 @@ const productionConf = merge(baseConfig, {
         })
       }
     }),
-    new ExtractTextPlugin('css_mint/[name].[hash:8].css'),
+    new ExtractTextPlugin(BaseDir + 'css/[name].[hash:8].css'),
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
-      filename: 'js_mint/vue.[hash:8].js',
+      filename: 'js/vue.vendor.js',
     }),
     new webpack.optimize.OccurrenceOrderPlugin(),
     // 自动注入 html
     new HtmlWebpackPlugin({
-      filename: 'html_mint/index.html',
+      filename: BaseDir + 'html/index.html',
       template: path.resolve(__dirname, '../index.html'),
       inject: true
     }),

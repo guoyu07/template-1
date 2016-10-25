@@ -7,11 +7,11 @@ router.get('/', function(req, res) {
 });
 
 router.get('/mint', function(req, res) {
-  res.sendFile(path.resolve('./public/html_mint/index.html'));
+  res.sendFile(path.resolve('./public/mint/html/index.html'));
 });
 
 router.get('/element', function(req, res) {
-  res.sendFile(path.resolve('./public/html_element/index.html'));
+  res.sendFile(path.resolve('./public/element/html/index.html'));
 });
 
 module.exports = router;

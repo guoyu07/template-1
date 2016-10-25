@@ -19,7 +19,7 @@ const productionConf = merge(baseConfig, {
   },
   module: {
     rules: [{
-      test: /\.(png|jpg|jpeg|gif|svg)$/,
+      test: /\.(png|jpg|jpeg|gif|svg|eot|woff|ttf)$/,
       loader: 'url?limit=10000&name=' + BaseDir + 'images/[name].[ext]',
     }]
   },
@@ -60,7 +60,7 @@ const productionConf = merge(baseConfig, {
     new ExtractTextPlugin(BaseDir + 'css/[name].[hash:8].css'),
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
-      filename: BaseDir + 'js/vue.[hash:8].js',
+      filename: 'js/vue.vendor.js',
     }),
     new webpack.optimize.OccurrenceOrderPlugin(),
     // 自动注入 html
