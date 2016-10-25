@@ -11,5 +11,8 @@
 	flex-direction: column;
 	align-items: center;
 	color: #41b883;
+	img {
+		width: 1rem;
+	}
 }
 </style>
