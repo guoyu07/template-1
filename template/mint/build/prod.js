@@ -60,7 +60,7 @@ const productionConf = merge(baseConfig, {
     new ExtractTextPlugin(BaseDir + 'css/[name].[hash:8].css'),
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
-      filename: 'js/vue.vendor.js',
+      filename: BaseDir + 'js/vue.vendor.js',
     }),
     new webpack.optimize.OccurrenceOrderPlugin(),
     // 自动注入 html
