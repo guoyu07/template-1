@@ -5,6 +5,19 @@
 	</div>
 </template>
 
+<script>
+import api from '../api';	
+
+export default {
+	mounted() {
+		api('/device/outdoor/1', 'get', {
+		}).then((res) => {
+			console.log(res)
+		});
+	}
+}
+</script>
+
 <style lang="css" scoped>
 .precss {
 	display: flex;
