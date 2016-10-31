@@ -12,7 +12,7 @@ html {
 }	
 body {
 	font-size: 16px;
-	background-color: #f8f8f8;
+	background-color: #f2f3f8;
 }
 html, body {
 	width: 100%;
