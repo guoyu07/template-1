@@ -1,0 +1,19 @@
+{
+  "name": "template-vue2",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server",
+    "init": "cd client && cnpm install",
+    "dev": "cd client && npm run dev",
+    "build": "rm -rf dist && cd src && npm run build"
+  },
+  "engines": {
+    "node": "6.x"
+  },
+  "dependencies": {
+    "compression": "^1.6.2",
+    "express": "^4.13.4",
+    "leanengine": "^1.2.2"
+  }
+}
