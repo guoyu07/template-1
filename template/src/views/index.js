@@ -1,10 +1,10 @@
-import Home from './Home';
-import NotFound from './NotFound';
+import Home from './Home.vue';
+import NotFound from './NotFound.vue';
 
 export
-default {}
+default {};
 
 export {
   Home,
   NotFound,
-}
+};
