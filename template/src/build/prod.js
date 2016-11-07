@@ -54,8 +54,11 @@ const productionConf = merge(baseConfig, {
         css: ExtractTextPlugin.extract({
           loader: "css-loader",
           fallbackLoader: "vue-style-loader"
-        })
-      }
+        }),
+      },
+      eslint: {
+        configFile: '../.eslintrc',
+      },
     }),
     new ExtractTextPlugin(BaseDir + 'css/[name].[hash:8].css'),
     new webpack.optimize.CommonsChunkPlugin({

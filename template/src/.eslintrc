@@ -10,6 +10,9 @@
     "jasmine": true
   },
   extends: 'airbnb-base',
+  plugins: [
+    'html'
+  ],
   "globals": {
     require: true,
   },
