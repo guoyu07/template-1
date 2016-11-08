@@ -45,7 +45,7 @@ const developmentConf = merge(baseConfig, {
     }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: path.resolve(__dirname, '../index.html'),
+      template: path.resolve(__dirname, '../src/index.html'),
     }),
   ],
 });

@@ -6,11 +6,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const CompressionWebpackPlugin = require('compression-webpack-plugin');
-const BaseDir = 'web-property/';
+const BaseDir = '';
 
 const productionConf = merge(baseConfig, {
   output: {
-    path: path.resolve(__dirname, '../../public'),
+    path: path.resolve(__dirname, '../dist'),
     filename: BaseDir + 'js/app.[hash:8].js',
     publicPath: '/',
   },
@@ -69,7 +69,7 @@ const productionConf = merge(baseConfig, {
     // 自动注入 html
     new HtmlWebpackPlugin({
       filename: BaseDir + 'html/index.html',
-      template: path.resolve(__dirname, '../index.html'),
+      template: path.resolve(__dirname, '../src/index.html'),
       inject: true
     }),
     // Gzip

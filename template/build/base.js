@@ -4,7 +4,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   entry: {
-    app: path.resolve(__dirname, '../main.js'),
+    app: path.resolve(__dirname, '../src/main.js'),
     vendor: [
       'vue',
       'vue-router'

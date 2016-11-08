@@ -1,18 +1,12 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-Vue.use(VueRouter)
+import Vue from 'vue';
+import VueRouter from 'vue-router';
 
-const Home = (resolve) => {
-  require.ensure(['./views/Home'], () => {
-    resolve(require('./views/Home'))
-  })
-}
+import {
+  Home,
+  NotFound,
+} from './views';
 
-const NotFound = (resolve) => {
-  require.ensure(['./views/NotFound'], () => {
-    resolve(require('./views/NotFound'))
-  })
-}
+Vue.use(VueRouter);
 
 const routes = [{
   path: '/',
@@ -22,19 +16,19 @@ const routes = [{
   path: '*',
   name: '404',
   component: NotFound,
-}]
+}];
 
 const router = new VueRouter({
   mode: 'hash',
   routes,
-})
+});
 
 router.afterEach((route) => {
   if (route) {
-    document.title = route.name
+    document.title = route.name;
   } else {
-    document.title = '首页'
+    document.title = '首页';
   }
-})
+});
 
-export default router
+export default router;

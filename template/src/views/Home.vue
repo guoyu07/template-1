@@ -1,18 +1,19 @@
 <template>
-	<div class="precss">
-		<h1>Powered By Vuejs 2</h1>
-		<img src="../assets/img/logo.png" alt="">
-	</div>
+<div class="notfound" style="text-align:center;">
+  <router-link to="/404">
+  <h1 style="font-size: 64px;color: #999;margin-top: 15%;margin-bottom: .2rem;">Just Fun!</h1>
+  </router-link>
+</div>
 </template>
 
+<script>
+</script>
+
 <style lang="css" scoped>
-.precss {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	color: #41b883;
-	img {
-		width: 1rem;
-	}
+.notfound {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
 }
 </style>
