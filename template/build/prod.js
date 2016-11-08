@@ -6,7 +6,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const CompressionWebpackPlugin = require('compression-webpack-plugin');
-const BaseDir = 'index/';
+const BaseDir = 'web-property/';
 
 const productionConf = merge(baseConfig, {
   output: {
@@ -54,13 +54,16 @@ const productionConf = merge(baseConfig, {
         css: ExtractTextPlugin.extract({
           loader: "css-loader",
           fallbackLoader: "vue-style-loader"
-        })
-      }
+        }),
+      },
+      eslint: {
+        configFile: '../.eslintrc',
+      },
     }),
     new ExtractTextPlugin(BaseDir + 'css/[name].[hash:8].css'),
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
-      filename: BaseDir + 'js/vue.[hash:8].js',
+      filename: BaseDir + 'js/vue.vendor.js',
     }),
     new webpack.optimize.OccurrenceOrderPlugin(),
     // 自动注入 html

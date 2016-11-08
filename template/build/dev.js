@@ -34,7 +34,10 @@ const developmentConf = merge(baseConfig, {
           }),
           require('precss')(),
         ],
-      }
+      },
+      eslint: {
+        configFile: '../.eslintrc',
+      },
     }),
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
