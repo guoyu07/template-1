@@ -19,6 +19,11 @@ const productionConf = merge(baseConfig, {
   },
   module: {
     rules: [{
+      enforce: 'pre',
+      test: /\.js$/,
+      loader: "eslint-loader",
+      exclude: /node_modules/,
+    }, {
       test: /\.(png|jpg|jpeg|gif|svg|eot|woff|ttf)$/,
       loader: 'url?limit=10000&name=' + BaseDir + 'images/[name].[ext]',
     }]
