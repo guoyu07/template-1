@@ -7,10 +7,8 @@ import App from './App.vue';
 
 Vue.use(Element);
 
-const app = new Vue({
+new Vue({
   router,
   el: '#app',
   render: h => h(App),
 });
-
-app();
