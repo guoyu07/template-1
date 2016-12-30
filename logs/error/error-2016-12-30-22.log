@@ -1,0 +1,252 @@
+[2016-12-30 22:07:05.920] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 3
+err name: userNotExist
+err message: 用户不存在
+err stack: userNotExist: 用户不存在
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:7:15
+    at Generator.next (<anonymous>)
+    at step (/Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:3:191)
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:3:437
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:3:99
+    at exports.getUser (/Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:4:1)
+    at dispatch (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:44:32)
+    at next (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:45:18)
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.7.0.1@koa-router/lib/router.js:321:16
+    at dispatch (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:44:32)
+    at next (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:45:18)
+    at allowedMethods (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.7.0.1@koa-router/lib/router.js:361:12)
+    at dispatch (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:44:32)
+    at next (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:45:18)
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.7.0.1@koa-router/lib/router.js:321:16
+    at dispatch (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:44:32)
+*************** error log end ***************
+
+[2016-12-30 22:07:06.017] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 1
+err name: userNotExist
+err message: 用户不存在
+err stack: userNotExist: 用户不存在
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:7:15
+    at Generator.next (<anonymous>)
+    at step (/Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:3:191)
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:3:437
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:3:99
+    at exports.getUser (/Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:4:1)
+    at dispatch (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:44:32)
+    at next (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:45:18)
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.7.0.1@koa-router/lib/router.js:321:16
+    at dispatch (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:44:32)
+    at next (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:45:18)
+    at allowedMethods (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.7.0.1@koa-router/lib/router.js:361:12)
+    at dispatch (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:44:32)
+    at next (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:45:18)
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.7.0.1@koa-router/lib/router.js:321:16
+    at dispatch (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:44:32)
+*************** error log end ***************
+
+[2016-12-30 22:07:06.076] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 1
+err name: userNotExist
+err message: 用户不存在
+err stack: userNotExist: 用户不存在
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:7:15
+    at Generator.next (<anonymous>)
+    at step (/Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:3:191)
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:3:437
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:3:99
+    at exports.getUser (/Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:4:1)
+    at dispatch (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:44:32)
+    at next (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:45:18)
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.7.0.1@koa-router/lib/router.js:321:16
+    at dispatch (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:44:32)
+    at next (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:45:18)
+    at allowedMethods (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.7.0.1@koa-router/lib/router.js:361:12)
+    at dispatch (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:44:32)
+    at next (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:45:18)
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.7.0.1@koa-router/lib/router.js:321:16
+    at dispatch (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:44:32)
+*************** error log end ***************
+
+[2016-12-30 22:07:44.069] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 7
+err name: userNotExist
+err message: 用户不存在
+err stack: userNotExist: 用户不存在
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:7:15
+    at Generator.next (<anonymous>)
+    at step (/Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:3:191)
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:3:437
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:3:99
+    at exports.getUser (/Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:4:1)
+    at dispatch (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:44:32)
+    at next (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:45:18)
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.7.0.1@koa-router/lib/router.js:321:16
+    at dispatch (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:44:32)
+    at next (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:45:18)
+    at allowedMethods (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.7.0.1@koa-router/lib/router.js:361:12)
+    at dispatch (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:44:32)
+    at next (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:45:18)
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.7.0.1@koa-router/lib/router.js:321:16
+    at dispatch (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:44:32)
+*************** error log end ***************
+
+[2016-12-30 22:07:44.150] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 1
+err name: userNotExist
+err message: 用户不存在
+err stack: userNotExist: 用户不存在
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:7:15
+    at Generator.next (<anonymous>)
+    at step (/Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:3:191)
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:3:437
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:3:99
+    at exports.getUser (/Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:4:1)
+    at dispatch (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:44:32)
+    at next (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:45:18)
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.7.0.1@koa-router/lib/router.js:321:16
+    at dispatch (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:44:32)
+    at next (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:45:18)
+    at allowedMethods (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.7.0.1@koa-router/lib/router.js:361:12)
+    at dispatch (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:44:32)
+    at next (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:45:18)
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.7.0.1@koa-router/lib/router.js:321:16
+    at dispatch (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:44:32)
+*************** error log end ***************
+
+[2016-12-30 22:07:44.204] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 1
+err name: userNotExist
+err message: 用户不存在
+err stack: userNotExist: 用户不存在
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:7:15
+    at Generator.next (<anonymous>)
+    at step (/Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:3:191)
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:3:437
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:3:99
+    at exports.getUser (/Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:4:1)
+    at dispatch (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:44:32)
+    at next (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:45:18)
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.7.0.1@koa-router/lib/router.js:321:16
+    at dispatch (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:44:32)
+    at next (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:45:18)
+    at allowedMethods (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.7.0.1@koa-router/lib/router.js:361:12)
+    at dispatch (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:44:32)
+    at next (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:45:18)
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.7.0.1@koa-router/lib/router.js:321:16
+    at dispatch (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:44:32)
+*************** error log end ***************
+
+[2016-12-30 22:08:12.231] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 3
+err name: userNotExist
+err message: 用户不存在
+err stack: userNotExist: 用户不存在
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:7:15
+    at Generator.next (<anonymous>)
+    at step (/Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:3:191)
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:3:437
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:3:99
+    at exports.getUser (/Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:4:1)
+    at dispatch (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:44:32)
+    at next (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:45:18)
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.7.0.1@koa-router/lib/router.js:321:16
+    at dispatch (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:44:32)
+    at next (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:45:18)
+    at allowedMethods (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.7.0.1@koa-router/lib/router.js:361:12)
+    at dispatch (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:44:32)
+    at next (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:45:18)
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.7.0.1@koa-router/lib/router.js:321:16
+    at dispatch (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:44:32)
+*************** error log end ***************
+
+[2016-12-30 22:08:12.415] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 1
+err name: userNotExist
+err message: 用户不存在
+err stack: userNotExist: 用户不存在
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:7:15
+    at Generator.next (<anonymous>)
+    at step (/Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:3:191)
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:3:437
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:3:99
+    at exports.getUser (/Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:4:1)
+    at dispatch (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:44:32)
+    at next (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:45:18)
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.7.0.1@koa-router/lib/router.js:321:16
+    at dispatch (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:44:32)
+    at next (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:45:18)
+    at allowedMethods (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.7.0.1@koa-router/lib/router.js:361:12)
+    at dispatch (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:44:32)
+    at next (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:45:18)
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.7.0.1@koa-router/lib/router.js:321:16
+    at dispatch (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:44:32)
+*************** error log end ***************
+
+[2016-12-30 22:08:12.537] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  /api/users/getUser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 0
+err name: userNotExist
+err message: 用户不存在
+err stack: userNotExist: 用户不存在
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:7:15
+    at Generator.next (<anonymous>)
+    at step (/Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:3:191)
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:3:437
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:3:99
+    at exports.getUser (/Users/dingyiming/JustTry/koa2/vuefe.com/app/controllers/user_controller.js:4:1)
+    at dispatch (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:44:32)
+    at next (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:45:18)
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.7.0.1@koa-router/lib/router.js:321:16
+    at dispatch (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:44:32)
+    at next (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:45:18)
+    at allowedMethods (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.7.0.1@koa-router/lib/router.js:361:12)
+    at dispatch (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:44:32)
+    at next (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:45:18)
+    at /Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.7.0.1@koa-router/lib/router.js:321:16
+    at dispatch (/Users/dingyiming/JustTry/koa2/vuefe.com/node_modules/.3.2.1@koa-compose/index.js:44:32)
+*************** error log end ***************
+
